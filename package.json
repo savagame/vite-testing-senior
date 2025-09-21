@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest --reporter=verbose",
+    "test:coverage": "vitest run --coverage --reporter=verbose",
     "test:ui": "vitest --ui"
   },
   "dependencies": {

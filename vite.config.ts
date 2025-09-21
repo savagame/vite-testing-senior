@@ -15,7 +15,7 @@ export default defineConfig({
     setupFiles: "./src/setupTests.ts",
     coverage: {
       provider: "v8",
-      reporter: ["text", "lcov", "verbose"],
+      reporter: ["text", "lcov", "html"],
       reportsDirectory: "./coverage",
       thresholds: {
         lines: 80,
