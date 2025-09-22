@@ -19,10 +19,19 @@ export default defineConfig({
       exclude: ["src/main.tsx", "src/App.tsx"],
       reportsDirectory: "./coverage",
       thresholds: {
-        lines: 20,
+        lines: 90,
         functions: 80,
-        branches: 70,
-        statements: 20,
+        branches: 80,
+        statements: 90,
+        thresholds: {
+          "src/hooks/useDebounce.ts": {
+            lines: 100,
+            functions: 100,
+          },
+          "src/hooks/useFetchUser.ts": {
+            lines: 95,
+          },
+        },
       },
     },
   },
